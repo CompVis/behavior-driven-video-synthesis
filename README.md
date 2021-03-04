@@ -1,6 +1,6 @@
 # Behavior-Driven Synthesis of Human Dynamics
 
-[Andreas Blattmann](xx)\*,
+[Andreas Blattmann](https://www.linkedin.com/in/andreas-blattmann-479038186/?originalSubdomain=de)\*,
 [Timo Milbich](https://timomilbich.github.io/)\*,
 [Michael Dorkenwald](https://mdork.github.io/)\*,
 [Björn Ommer](https://hci.iwr.uni-heidelberg.de/Staff/bommer),
