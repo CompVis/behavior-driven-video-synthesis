@@ -13,8 +13,8 @@
 ![teaser](https://github.com/CompVis/behavior-driven-video-synthesis/blob/gh-pages/images/first-page.png "Method pipeline")
 
 
-### Video Results   
-![](https://github.com/CompVis/behavior-driven-video-synthesis/blob/gh-pages/images/behavior_transfer1_RGB.mp4 "Method pipeline")
+### Results   
+![](https://github.com/CompVis/behavior-driven-video-synthesis/blob/gh-pages/images/results.png "Method pipeline")
 
 
 Code coming soon....
