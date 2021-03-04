@@ -3,7 +3,8 @@
 [Andreas Blattmann](xx)\*,
 [Timo Milbich](https://timomilbich.github.io/)\*,
 [Michael Dorkenwald](https://mdork.github.io/)\*,
-[Björn Ommer](https://hci.iwr.uni-heidelberg.de/Staff/bommer)<br/>
+[Björn Ommer](https://hci.iwr.uni-heidelberg.de/Staff/bommer),
+[CVPR 2021](http://cvpr2021.thecvf.com/)<br/>
 \* equal contribution
 
 [**Project page**](https://compvis.github.io/behavior-driven-video-synthesis/) | 
