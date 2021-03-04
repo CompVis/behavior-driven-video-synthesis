@@ -1,7 +1,7 @@
 # Behavior Driven Synthesis of Human Dynamics
 
 [Andreas Blattmann](xx)\*,
-[Timo Milbich](hhttps://timomilbich.github.io/)\*,
+[Timo Milbich](https://timomilbich.github.io/)\*,
 [Michael Dorkenwald](https://mdork.github.io/)\*,
 [Björn Ommer](https://hci.iwr.uni-heidelberg.de/Staff/bommer)<br/>
 \* equal contribution
