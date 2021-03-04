@@ -1,4 +1,4 @@
-# Behavior Driven Synthesis of Human Dynamics
+# Behavior-Driven Synthesis of Human Dynamics
 
 [Andreas Blattmann](xx)\*,
 [Timo Milbich](https://timomilbich.github.io/)\*,
