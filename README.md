@@ -1,3 +1,3 @@
-# Behavior-Driven-Synthesis-of-Human-Dynamics
+# Behavior Driven Synthesis of Human Dynamics
 
 Code coming soon....
