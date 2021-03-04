@@ -5,6 +5,6 @@
 [**Paper**](XX) | 
 [**Supplementary Material**](XX) |
 
-![pipeline](https://github.com/CompVis/behavior-driven-video-synthesis/blob/gh-pages/images/first-page.pdf "Method pipeline")
+![pipeline](https://github.com/CompVis/behavior-driven-video-synthesis/blob/gh-pages/images/first-page.png "Method pipeline")
 
 Code coming soon....
