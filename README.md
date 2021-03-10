@@ -9,7 +9,7 @@
 
 [**Project page**](https://compvis.github.io/behavior-driven-video-synthesis/) |
 [**Arxiv**](https://arxiv.org/abs/2103.04677)|
-[BibTeX](#bibtex)
+[**BibTeX**](#bibtex)
 
 ![teaser](https://github.com/CompVis/behavior-driven-video-synthesis/blob/gh-pages/images/first-page.png "Method pipeline")
 
