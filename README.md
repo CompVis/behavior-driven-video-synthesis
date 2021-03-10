@@ -7,7 +7,8 @@
 [CVPR 2021](http://cvpr2021.thecvf.com/)<br/>
 \* equal contribution
 
-[**Project page**](https://compvis.github.io/behavior-driven-video-synthesis/) 
+[**Project page**](https://compvis.github.io/behavior-driven-video-synthesis/) |
+[**Arxiv**](https://arxiv.org/abs/2103.04677)
 
 ![teaser](https://github.com/CompVis/behavior-driven-video-synthesis/blob/gh-pages/images/first-page.png "Method pipeline")
 
