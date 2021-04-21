@@ -1,0 +1,59 @@
+# Here goes all training information and the required parameters
+general:
+  base_dir: "/export/data/ablattma/neural_pose_behavior/"
+  project_name: train_behavior_net
+  experiment: behavior_net
+  seed: 42
+
+data:
+  dataset: Human3.6m
+  datapath: none # insert <DATAPATH_H36M> here, see README.md
+  use_person_split: True
+  small_joint_model: False
+  seq_length: !!python/tuple [50,51]
+  sequential_frame_lag: 2
+  label_type: action # ["mixed","health","velocity","person_id","action","random_pose_action",]
+  all_actions: True
+  action_split_type: default # [default,generalize_sitting,generalize_walking]
+  keypoint_type: keypoints_3d_world # ["angle_world_expmap", "keypoints_3d_world", "keypoints"]
+  n_data_workers: 20
+  spatial_size: 256
+
+
+architecture:
+  decoder_arch: lstm # [lstm,gru]
+  linear_in_decoder: False
+  dim_hidden_b: 1024
+  # flow
+  flow_mid_channels_factor: 2
+  n_flows: 15
+  flow_hidden_depth: 2
+  cvae: False # whether to use vanilla cvae or not
+
+
+training:
+  batch_size: 64
+  n_epochs: 50
+  lr_init: 0.0001
+  tau:
+    - 0.2
+    - 0.45
+    - 0.7
+  gamma: 0.3
+  weight_decay: 0.0
+  recon_loss_weight: 2.5
+  information_max: 100
+  gamma_init: 0
+  gamma_step: 0.00001
+  flow_lr: 4.5e-7  # 0.0000001
+  use_regressor: True
+  weight_regressor: 0.01
+  imax_scaling: none # [ascend,descend,none]
+
+
+logging:
+  n_vid_to_generate: 2
+  n_epoch_eval: 1
+  # this is only for inference mode
+
+

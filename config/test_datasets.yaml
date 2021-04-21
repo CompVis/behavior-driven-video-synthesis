@@ -1,0 +1,27 @@
+
+# currently used for synthesis on human3.6m
+
+
+data:
+  dataset: Human3.6m
+  use_person_split: True
+  small_joint_model: True
+  seq_length: !!python/tuple [0,0]
+  sequential_frame_lag: 1
+  label_type: velocity # ["mixed","health","velocity","person_id","action","random_pose_action",]
+  all_actions: True
+  action_split_type: default # [default,generalize_sitting,generalize_walking]
+  keypoint_type: keypoints_3d_world # ["angle_world_expmap", "keypoints_3d_world", "keypoints"]
+  n_data_workers: 0
+  train_synthesis: True
+  use_3d_for_stickman: True
+  use_crops: False
+  inplane_normalize: False
+  diff_stickman_colors: False
+  spatial_size: 256
+  box_factor: 2
+  batch_size: 1
+
+general:
+  mode: test_synth # possible [visualize_projection,test_synth,default]
+  n_vid_to_generate: 100

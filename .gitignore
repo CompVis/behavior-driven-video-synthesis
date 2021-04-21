@@ -1,0 +1,15 @@
+**/__pycache__/
+**/.idea
+test_kps.py
+images/
+notebooks/
+**/test_data
+saved_runs/
+
+*.txt
+*.sh
+projects/
+experiments/pmnet_pretrained_vunet.py
+/tmp
+runs/
+doc_runs/

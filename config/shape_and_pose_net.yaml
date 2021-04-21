@@ -1,0 +1,76 @@
+general:
+  base_dir: "/export/data/ablattma/neural_pose_behavior/"
+  project_name: train_shape_and_pose_net_h36m
+  experiment: cvbae
+  seed: 42
+
+data:
+  dataset: Human3.6m
+  datapath: none #change this to the datapath for the dataset, you want to use for training
+  use_person_split: False
+  small_joint_model: False
+  seq_length: !!python/tuple [0,0]
+  sequential_frame_lag: 1
+  label_type: person_id # ["mixed","health","velocity","person_id","action","random_pose_action",]
+  all_actions: True
+  action_split_type: default # [default,generalize_sitting,generalize_walking]
+  keypoint_type: keypoints_3d_world # ["angle_world_expmap", "keypoints_3d_world", "keypoints"]
+  n_data_workers: 20
+  train_synthesis: True
+  use_3d_for_stickman: True
+  use_crops: False
+  inplane_normalize: False
+  diff_stickman_colors: False
+  spatial_size: 256
+  box_factor: 2
+  bottleneck_factor: 2
+  crop_app: False
+  sampling: pid # should be in [none, body, full, pid]
+
+architecture:
+  n_latent_scales: 2
+  conv_layer_type: l1 # [l1,l2]
+  nf_start: 32
+  nf_max: 128
+  subpixel_upsampling: True
+  n_scales: 0
+  n_rnb: 2
+  # regressor
+  linear_width_factor: 1
+  n_linear: 2
+  cvae: False
+
+training:
+#  gpu: 0
+  batch_size: 12
+  vgg_weights:
+    - 1.0
+    - 1.0
+    - 1.0
+    - 1.0
+    - 1.0
+    - 1.0
+  dropout_prob: 0.05
+  lr: 0.0005
+  gamma_step: 0.00001
+  n_init_batches: 4
+  adam_betas: !!python/tuple [0.5,0.9]
+  end_iteration: 150000
+  imax_scaling: none # [none,ascend,descend]
+  information_max: 1000
+  ll_weight: 1.
+  # regressor
+  train_regressor: True
+  weight_regressor: 4.
+  reg_steps: 5
+
+metrics:
+  test_batch_size: 8
+  max_n_samples: 8000 # 8000S
+  n_it_metrics: 10000 # 20000
+
+logging:
+  n_test_samples: 4
+  ckpt_steps: 1000 # 1000
+  log_steps: 300 # 300
+  n_logged_img: 4

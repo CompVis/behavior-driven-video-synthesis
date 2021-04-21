@@ -1,0 +1,43 @@
+# Here goes all training information and the required parameters
+general:
+  base_dir: "/export/data/ablattma/neural_pose_behavior/"
+  debug: False
+  project_name: train_mtvae
+  experiment: mtvae
+  seed: 42
+
+data:
+  dataset: Human3.6m
+  use_person_split: True
+  small_joint_model: True
+  seq_length: !!python/tuple [59,60]
+  sequential_frame_lag: 2
+  label_type: velocity # ["mixed","health","velocity","person_id","action","random_pose_action",]
+  all_actions: True
+  action_split_type: default # [default,generalize_sitting,generalize_walking]
+  keypoint_type: keypoints_3d_world # ["angle_world_expmap", "keypoints_3d_world", "keypoints"]
+  n_data_workers: 20
+  spatial_size: 256
+
+
+architecture:
+  n_cond: 10
+
+
+training:
+  batch_size: 256
+  n_epochs: 50
+  lr_init: 0.0001
+  weight_decay: 0.000000000001
+  weight_motion: 10
+  k_vel: 8
+  weight_cycle: 10
+
+
+logging:
+  n_vid_to_generate: 2
+  n_epoch_eval: 3
+  # this is only for inference mode
+  visualization: True
+
+
